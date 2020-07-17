@@ -1,52 +1,69 @@
 const fs = require('fs');
 
 // create the about section
-const generateAbout = aboutText => {
-  if (!aboutText) {
+const generateContributing = contributeText => {
+  if (!contributeText) {
     return '';
   }
 
   return `
     <section class="my-3" id="about">
-      <h2 class="text-dark bg-primary p-2 display-inline-block">About Me</h2>
-      <p>${aboutText}</p>
+      <h2 class="text-dark bg-primary p-2 display-inline-block">Contributing</h2>
+      <p> 
+      ## Contributing: <br>
+      ${contributeText}
+      </p>
     </section>
   `;
 };
+const generateTests = testsText => {
+    if (!testsText) {
+      return '';
+    }
+  
+    return `
+      <section class="my-3" id="about">
+        <h2 class="text-dark bg-primary p-2 display-inline-block">Contributing</h2>
+        <p> 
+        ## Tests:<br>
+         ${testsText}
+         </p>
+      </section>
+    `;
+  };
 const generateProjects = projectsArr => {
   return `
-    <section class="my-3" id="portfolio">
-      <h2 class="text-dark bg-primary p-2 display-inline-block">Work</h2>
-      <div class="flex-row justify-space-between">
+    <section>
+      <div>
       ${projectsArr
-        .filter(({ feature }) => feature)
-        .map(({ name, description, languages, link }) => {
+        .map(({description, languages, install, usage, license, email,github, link }) => {
           return `
-          <div class="col-12 mb-2 bg-dark text-light p-3">
-            <h3 class="portfolio-item-title text-light">${name}</h3>
-            <h5 class="portfolio-languages">
-              Built With:
-              ${languages.join(', ')}
+          <div>
+            <p>
+            ## Description:<br>
+             ${description}
+            </p>
+            <h5>
+              ## Built With:<br>
+             - ${languages.join(', ')}
             </h5>
-            <p>${description}</p>
-            <a href="${link}" class="btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
-          </div>
-        `;
-        })
-        .join('')}
-
-      ${projectsArr
-        .filter(({ feature }) => !feature)
-        .map(({ name, description, languages, link }) => {
-          return `
-          <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
-            <h3 class="portfolio-item-title text-light">${name}</h3>
-            <h5 class="portfolio-languages">
-              Built With:
-              ${languages.join(', ')}
-            </h5>
-            <p>${description}</p>
-            <a href="${link}" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+            <p>
+            ## Installation:<br>
+            ${install}
+            </p>
+            <p>## Usage:<br>
+            ${usage}
+            </p>
+            <p>
+            ## License:<br>
+            ${license}
+            </p>
+            <div>
+            ## Questions: <br>
+                <a href="${link}" class="btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a><br>
+                <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/${github}">GitHub</a><br>
+                 <p>${email}</p>
+            </div>
           </div>
         `;
         })
@@ -59,7 +76,7 @@ const generateProjects = projectsArr => {
 
 module.exports = templateData => {
   // destructure page data by section
-  const { projects, about, ...header } = templateData;
+  const { projects, contribute, tests, ...header } = templateData;
 
   return `
   <!DOCTYPE html>
@@ -78,16 +95,14 @@ module.exports = templateData => {
   <body>
     <header>
       <div class="container flex-row justify-space-between align-center py-3">
-        <h1 class="page-title text-secondary bg-dark py-2 px-3">${header.title}</h1>
+        <h1 class="page-title text-secondary bg-dark py-2 px-3"># ${header.title}</h1>
         <nav class="flex-row">
-          <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/${
-            header.github
-          }">GitHub</a>
         </nav>
       </div>
     </header>
     <main class="container my-5">
-   ${generateAbout(about)}
+   ${generateContributing(contribute)}
+   ${generateTests(tests)}
    ${generateProjects(projects)}
     </main>
     <footer class="container text-center py-3">

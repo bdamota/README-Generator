@@ -21,10 +21,10 @@ const promptUser = () => {
   };
   
 
-  const promptProject = portfolioData => {
+  const promptProject = readMeData => {
     // If there's no 'projects' array property, create one
-    if (!portfolioData.projects) {
-    portfolioData.projects = [];
+    if (!readMeData.projects) {
+      readMeData.projects = [];
   }
     return inquirer.prompt([
       {
@@ -86,7 +86,7 @@ const promptUser = () => {
       },
       {
         type: 'input',
-        name: 'contributing',
+        name: 'contribute',
         message: 'Provide contribution guidelines:',
         when: ({ confirmContributing }) => confirmContributing
       },
@@ -102,7 +102,20 @@ const promptUser = () => {
         message: 'Provide examples on how to run tests you have written:',
         when: ({ confirmTests }) => confirmTests
       },
-       {
+      {
+        type: 'input',
+        name: 'link',
+        message: 'Enter the GitHub link to your project. (Required)',
+        validate: githubLinkInput => {
+            if (githubLinkInput) {
+              return true;
+            } else {
+              console.log('Please enter your project github link!');
+              return false;
+            }
+          }
+      },
+      {
         type: 'input',
         name: 'github',
         message: 'Enter your GitHub Username (Required)',
@@ -128,34 +141,21 @@ const promptUser = () => {
             }
           }
       },
-      {
-        type: 'input',
-        name: 'link',
-        message: 'Enter the GitHub link to your project. (Required)',
-        validate: githubLinkInput => {
-            if (githubLinkInput) {
-              return true;
-            } else {
-              console.log('Please enter your project github link!');
-              return false;
-            }
-          }
-      },
     ])
     .then(projectData => {
-        portfolioData.projects.push(projectData);
+      readMeData.projects.push(projectData);
         if (projectData.confirmAddProject) {
-            return promptProject(portfolioData);
+            return promptProject(readMeData);
           } else {
-            return portfolioData;
+            return readMeData;
           }
       })
   };
  
   promptUser()
   .then(promptProject)
-  .then(portfolioData => {
-    return generatePage(portfolioData);
+  .then(readMeData => {
+    return generatePage(readMeData);
   })
   .then(pageHTML => {
     return writeFile(pageHTML);
