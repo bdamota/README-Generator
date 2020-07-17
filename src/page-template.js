@@ -9,16 +9,16 @@ return `
 ${description}
 
 ## Table of Contents:
-- Built With
-- Installation 
-- Usage 
-- License
-- Contributing 
-- Tests 
-- Live Site 
-- Questions
+- [Technologies](#Technologies)
+- [Installation](#Installation) 
+- [Usage](#Usage) 
+- [License](#License)
+- [Contributing](#Contributing) 
+- [Tests](#Tests) 
+- [Site](#Site) 
+- [Questions](#Questions)
 
-## Built With:
+## Technologies:
 - ${languages.join(', ')}
             
 ## Installation:
@@ -28,7 +28,7 @@ ${install}
 ${usage}
             
 ## License:
-This project is covered under the ${license}. For more information visit: https://tldrlegal.com/.
+This project is covered under the ${license}. For more information visit: https://choosealicense.com/.
             
 ## Contributing:
 ${contribute}
@@ -36,11 +36,11 @@ ${contribute}
 ## Tests:
 ${tests}
 
-## Live Site:
+## Site:
 ${link}
            
 ## Questions:
-Github: https://github.com/${github}
+[Github](https://github.com/${github})
     
 Email: ${email}
   `;

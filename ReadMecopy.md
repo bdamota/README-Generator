@@ -1,45 +1,45 @@
 
- # sbsb
+ # sgergs
 
 
 ## Description:
-sbwb
+agterga
 
 ## Table of Contents:
-- Built With
-- Installation 
-- Usage 
-- License
-- Contributing 
-- Tests 
-- Live Site 
-- Questions
+- [Technologies](#Technologies)
+- [Installation](#Installation) 
+- [Usage](#Usage) 
+- [License](#License)
+- [Contributing](#Contributing) 
+- [Tests](#Tests) 
+- [Site](#Site) 
+- [Questions](#Questions)
 
-## Built With:
-- JavaScript, HTML, CSS
+## Technologies:
+- JavaScript
             
 ## Installation:
-wbwb
+sdfh
             
 ## Usage:
-grbgbs
+dgs
             
 ## License:
-This project is covered under the MIT License. For more information visit: https://tldrlegal.com/.
+This project is covered under the Apache License 2.0. For more information visit: https://choosealicense.com/.
             
 ## Contributing:
-cv
+dgs
            
 ## Tests:
-sb 
+gsdg
 
-## Live Site:
+## Site:
 https://github.com/bdamota/README-Generator
            
 ## Questions:
-https://github.com/bdamota
+[Github](https://github.com/bdamota)
     
-bdamota0506@gmail.com
+Email: dsg
   
           
   
