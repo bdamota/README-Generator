@@ -1,9 +1,9 @@
 
- # sgsg
+ # sbsb
 
 
 ## Description:
-sgwg
+sbwb
 
 ## Table of Contents:
 - Built With
@@ -16,30 +16,30 @@ sgwg
 - Questions
 
 ## Built With:
-- JavaScript
+- JavaScript, HTML, CSS
             
 ## Installation:
-asbb
+wbwb
             
 ## Usage:
-bnawbs
+grbgbs
             
 ## License:
-Apache License 2.0
+This project is covered under the MIT License. For more information visit: https://tldrlegal.com/.
             
 ## Contributing:
-shns
+cv
            
 ## Tests:
-ns
+sb 
 
 ## Live Site:
-https://github.com/bdamota/Run-Buddy
+https://github.com/bdamota/README-Generator
            
 ## Questions:
 https://github.com/bdamota
     
-bbgs
+bdamota0506@gmail.com
   
           
   

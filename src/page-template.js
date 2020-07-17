@@ -28,7 +28,7 @@ ${install}
 ${usage}
             
 ## License:
-${license}
+This project is covered under the ${license}. For more information visit: https://tldrlegal.com/.
             
 ## Contributing:
 ${contribute}
@@ -40,9 +40,9 @@ ${tests}
 ${link}
            
 ## Questions:
-https://github.com/${github}
+Github: https://github.com/${github}
     
-${email}
+Email: ${email}
   `;
  })
   .join('')}
