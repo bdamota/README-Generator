@@ -1,0 +1,27 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "Generate a README from the command-line",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^7.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdamota/README-Generator.git"
+  },
+  "keywords": [
+    "readme",
+    "command-line"
+  ],
+  "author": "Briana daMota",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdamota/README-Generator/issues"
+  },
+  "homepage": "https://github.com/bdamota/README-Generator#readme"
+}
