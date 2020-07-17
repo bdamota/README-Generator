@@ -8,6 +8,8 @@ return `
 ## Description:
 ${description}
 
+![${license}](https://img.shields.io/badge/license-MIT-brightgreen)
+
 ## Table of Contents:
 - [Technologies](#Technologies)
 - [Installation](#Installation) 
@@ -40,6 +42,8 @@ ${tests}
 ${link}
            
 ## Questions:
+Reach out on GitHub or through email for questions. 
+
 [Github](https://github.com/${github})
     
 Email: ${email}

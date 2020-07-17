@@ -1,9 +1,11 @@
 
- # sgergs
+ # Portfolio 
 
 
 ## Description:
-agterga
+Generate a Portfolio from the command-line. 
+
+![MIT License](https://img.shields.io/badge/license-MIT-brightgreen)
 
 ## Table of Contents:
 - [Technologies](#Technologies)
@@ -16,30 +18,31 @@ agterga
 - [Questions](#Questions)
 
 ## Technologies:
-- JavaScript
+- JavaScript, HTML, CSS, ES6, jQuery, Bootstrap, Node
             
 ## Installation:
-sdfh
+Clone repository, install node and inquierer. 
             
 ## Usage:
-dgs
+Use this to generate a portfolio quickly, without the use of a web browser. 
             
 ## License:
-This project is covered under the Apache License 2.0. For more information visit: https://choosealicense.com/.
+This project is covered under the MIT License. For more information visit: https://choosealicense.com/.
             
 ## Contributing:
-dgs
+Feel free to find/fix bugs and suggest upgrades. 
            
 ## Tests:
-gsdg
-
+Currently showing a test. 
 ## Site:
-https://github.com/bdamota/README-Generator
+https://github.com/bdamota/Portfolio-Generator
            
 ## Questions:
+Reach out on GitHub or through email for questions. 
+
 [Github](https://github.com/bdamota)
     
-Email: dsg
+Email: bdamota0506@gmail.com 
   
           
   
