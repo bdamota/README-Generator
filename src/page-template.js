@@ -1,62 +1,62 @@
 const fs = require('fs');
 
 const generateProjects = projectsArr => {
-  return `
-    ${projectsArr
-    .map(({description, languages, install, usage, license, contribute, tests, email,github, link }) => {
-    return `
-    ## Description:
-    ${description}
+return `
+${projectsArr
+.map(({description, languages, install, usage, license, contribute, tests, email,github, link }) => {
+return `
+## Description:
+${description}
 
-    ## Table of Contents:
-    - BuiltWith
-    - Installation 
-    - Usage 
-    - License
-    - Contributing 
-    - Tests 
-    - Live Site 
-    - Questions
+## Table of Contents:
+- Built With
+- Installation 
+- Usage 
+- License
+- Contributing 
+- Tests 
+- Live Site 
+- Questions
 
-    ## Built With:
-    - ${languages.join(', ')}
+## Built With:
+- ${languages.join(', ')}
             
-    ## Installation:
-    ${install}
+## Installation:
+${install}
             
-    ## Usage:
-    ${usage}
+## Usage:
+${usage}
             
-    ## License:
-    ${license}
+## License:
+${license}
             
-    ## Contributing:
-    ${contribute}
+## Contributing:
+${contribute}
            
-    ## Tests:
-    ${tests}
+## Tests:
+${tests}
 
-    ## Live Site:
-    ${link}
+## Live Site:
+${link}
            
-    ## Questions:
-    https://github.com/${github}
+## Questions:
+https://github.com/${github}
     
-    ${email}
-    `;
-    })
-    .join('')}
+${email}
   `;
+ })
+  .join('')}
+ `;
 };
 
 
 module.exports = templateData => {
-    // destructure page data by section
-    const { projects, title } = templateData;
+// destructure page data by section
+ const { projects, title, install } = templateData;
   
-    return `
-    # ${title}
-    ${generateProjects(projects)}
-    `;
-  };
+return `
+ # ${title}
+${generateProjects(projects)}         
+  `;
+ };
   
