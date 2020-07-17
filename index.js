@@ -30,7 +30,7 @@ const promptUser = () => {
       {
         type: 'input',
         name: 'description',
-        message: 'Provide a description of the project (Required.)',
+        message: 'Provide a description of the project. (Required.)',
         validate: projectDescriptionInput => {
             if (projectDescriptionInput) {
               return true;
@@ -43,7 +43,7 @@ const promptUser = () => {
       {
         type: 'checkbox',
         name: 'languages',
-        message: 'What did you this project with? (Check all that apply)',
+        message: 'What did you make this project with? (Check all that apply)',
         choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
       },
       {
@@ -75,32 +75,34 @@ const promptUser = () => {
        {
         type: 'checkbox',
         name: 'license',
-        message: 'Which license would you like to use for this project (Check one.)',
+        message: 'Which license would you like to use for this project. (Check one.)',
         choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'Mozilla Public License 2.0', 'BSD 2-Clause "Simplified" License', 'Eclipse Public License 2.0', 'Creative Commons Zero v1.0 Universal']
-      },
-      {
-        type: 'confirm',
-        name: 'confirmContributing',
-        message: 'Would you like to enter some guidelines for people you would like to contribute to the project?',
-        default: true
       },
       {
         type: 'input',
         name: 'contribute',
-        message: 'Provide contribution guidelines:',
-        when: ({ confirmContributing }) => confirmContributing
-      },
-      {
-        type: 'confirm',
-        name: 'confirmTests',
-        message: 'Would you like to write and enter tests for your applications?',
-        default: true
+        message: 'Provide contribution guidelines. (Required.)',
+        validate: contributeInput => {
+          if (contributeInput) {
+            return true;
+          } else {
+            console.log('Please enter guidelines!');
+            return false;
+          }
+         } 
       },
       {
         type: 'input',
         name: 'tests',
-        message: 'Provide examples on how to run tests you have written:',
-        when: ({ confirmTests }) => confirmTests
+        message: 'Provide examples on how to run tests that you have written. (Required.)',
+        validate: testsInput => {
+          if (testsInput) {
+            return true;
+          } else {
+            console.log('Please enter tests!');
+            return false;
+          }
+         } 
       },
       {
         type: 'input',
