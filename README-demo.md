@@ -1,9 +1,9 @@
 
- # Portfolio 
+ # Code Quiz 
 
 
 ## Description:
-Generate a Portfolio from the command-line. 
+A simple app designed to test coding knowledge. 
 
 ![MIT License](https://img.shields.io/badge/license-MIT-brightgreen)
 
@@ -18,24 +18,25 @@ Generate a Portfolio from the command-line.
 - [Questions](#Questions)
 
 ## Technologies:
-- JavaScript, HTML, CSS, ES6, jQuery, Bootstrap, Node
+- JavaScript, HTML, CSS, Bootstrap
             
 ## Installation:
-Clone repository, install node and inquierer. 
+Clone app respository. 
             
 ## Usage:
-Use this to generate a portfolio quickly, without the use of a web browser. 
+Use this app to give a timed coding quiz. 
             
 ## License:
 This project is covered under the MIT License. For more information visit: https://choosealicense.com/.
             
 ## Contributing:
-Feel free to find/fix bugs and suggest upgrades. 
+Find and fix bugs and suggest upgrades. 
            
 ## Tests:
-Currently showing a test. 
+Example of creating from command-line in progress. 
+
 ## Site:
-https://github.com/bdamota/Portfolio-Generator
+https://github.com/bdamota/Code-Quiz
            
 ## Questions:
 Reach out on GitHub or through email for questions. 

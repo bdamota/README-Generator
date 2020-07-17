@@ -76,15 +76,7 @@ const promptUser = () => {
         type: 'checkbox',
         name: 'license',
         message: 'Which license would you like to use for this project. (Check one.)',
-        choices: [
-          {name:'Apache License 2.0', short:'apache'}, 
-          {name: 'GNU General Public License v3.0'},
-          {name: 'MIT License'},
-          {name:'Mozilla Public License 2.0'},
-          {name: 'BSD 2-Clause "Simplified" License'},
-          {name: 'Eclipse Public License 2.0'},
-          {name:'Creative Commons Zero v1.0 Universal'}
-        ]
+        choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'Mozilla Public License 2.0', 'BSD 2-Clause "Simplified" License', 'Eclipse Public License 2.0', 'Creative Commons Zero v1.0 Universal']
       },
       {
         type: 'input',
@@ -115,12 +107,12 @@ const promptUser = () => {
       {
         type: 'input',
         name: 'link',
-        message: 'Enter the GitHub link to your project. (Required)',
+        message: 'Enter the live link to your project. (Required)',
         validate: githubLinkInput => {
             if (githubLinkInput) {
               return true;
             } else {
-              console.log('Please enter your project github link!');
+              console.log('Please enter your project link!');
               return false;
             }
           }
