@@ -8,6 +8,6 @@ An app that quickly generates a professional README file from the command-line.
 - HTML5
 - JavaScript 
 - ES6
-- JQuery 
-- Node
+- jQuery 
+- Node.js
 - Inquirer 
