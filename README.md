@@ -1,5 +1,5 @@
 # README Genearator 
-A command line application that dynamically generates a professional README.md file from the user's input using Node.js and the Inquirer package. 
+A command-line application that dynamically generates a professional README.md file from the user's input using Node.js and the Inquirer package. 
 
 ## Screenshot:
 ![image](https://github.com/bdamota/README-Generator/blob/master/Screen%20Shot%202020-07-19%20at%2012.57.18%20PM.png)
@@ -12,7 +12,7 @@ A command line application that dynamically generates a professional README.md f
 - Node.js
 - Inquirer 
 
-## Installation 
+## Installation: 
 - Clone Repository. 
 - Install Node.js and Inquirer Package. 
 - Invoke using index.js file. 
