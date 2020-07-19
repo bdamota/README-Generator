@@ -12,6 +12,11 @@ A command line application that dynamically generates a professional README.md f
 - Node.js
 - Inquirer 
 
+## Installation 
+- Clone Repository. 
+- Install Node.js and Inquirer Package. 
+- Invoke using index.js file. 
+
 ## Functionality Demo:
 https://drive.google.com/file/d/1HNT9eQWJ8C--LI9Niir-kcJW1DvPe3o5/view 
 
