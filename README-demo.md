@@ -3,7 +3,7 @@
 
 
 ## Description:
-A simple quiz to test coding knowledge. 
+A simple application to test coding knowledge. 
 
 ![MIT License](https://img.shields.io/badge/license-MIT-brightgreen)
 
@@ -21,10 +21,10 @@ A simple quiz to test coding knowledge.
 - JavaScript, HTML, CSS, Bootstrap
             
 ## Installation:
-Clone repository. 
+Clone respository. 
             
 ## Usage:
-A way to use would be to test potential employess for necessary coding knowledge. 
+A use example would be to test potential employees for general coding knowledge. 
             
 ## License:
 This project is covered under the MIT License. For more information visit: https://choosealicense.com/.
@@ -33,7 +33,7 @@ This project is covered under the MIT License. For more information visit: https
 Find and fix bugs and suggest improvements. 
            
 ## Tests:
-An example test would be to check usability and user experience. 
+An example test would be to check usability and user experience by having users fill out a survey after taking quiz. 
 
 ## Site:
 https://bdamota.github.io/Code-Quiz/
@@ -41,7 +41,7 @@ https://bdamota.github.io/Code-Quiz/
 ## Questions:
 Reach out on GitHub or through email for questions. 
 
-[Github](https://github.com/bdamota)
+[Github](https://github.com/bdamota )
     
 Email: bdamota0506@gmail.com 
   
