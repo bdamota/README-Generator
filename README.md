@@ -8,7 +8,6 @@ A command-line application that dynamically generates a professional README.md f
 - HTML5
 - JavaScript 
 - ES6
-- jQuery 
 - Node.js
 - Inquirer 
 
